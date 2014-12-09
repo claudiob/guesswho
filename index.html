@@ -3,6 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <!--meta name="viewport" content="width=device-width, height=568, user-scalable=no"-->
   <title>Know your coworkers</title>
   <style>
     body, input {text-align: center; font-family: monospace}
@@ -40,7 +41,7 @@
   </div>
 
   <form>
-    <label>
+    <label ng-cloak ng-hide="isGuessed(quiz)" >
       Hi, my name is:
       <input type="text" autofocus="autofocus" autocorrect='off' autocapitalize='off' ng-model="guess" ng-disabled="isGuessed(quiz)" data-kyc-focus="!isGuessed(quiz)" size="3" />
     </label>
