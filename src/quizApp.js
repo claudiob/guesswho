@@ -119,12 +119,20 @@ function QuizCtrl($scope, $interval, Quizzes) {
     return typeof(quiz.outcome) != 'undefined'
   };
 
+  $scope.scrollKeyboard = function() {
+    window.scrollTo(-100, -100);
+  };
+
   $scope.isRight = function(quiz) {
     return quiz.outcome == true
   };
 
   $scope.isWrong = function(quiz) {
     return quiz.outcome == false
+  };
+
+  $scope.quizzes_next = function(quiz) {
+    window.scrollTo(0, 0);
   };
 
   $scope.quizzes.over = function() {

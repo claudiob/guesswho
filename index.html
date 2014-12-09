@@ -43,7 +43,7 @@
   <form>
     <label ng-cloak ng-hide="isGuessed(quiz)" >
       Hi, my name is:
-      <input type="text" autofocus="autofocus" autocorrect='off' autocapitalize='off' ng-model="guess" ng-disabled="isGuessed(quiz)" data-kyc-focus="!isGuessed(quiz)" size="3" />
+      <input type="text" ng-focus="quizzes_next()" autofocus="autofocus" autocorrect='off' autocapitalize='off' ng-model="guess" ng-disabled="isGuessed(quiz)" sdata-kyc-focus="!isGuessed(quiz)" size="3" />
     </label>
 
     <div class="outcome" ng-show="isGuessed(quiz)" ng-cloak ng-class='{right: isRight(quiz), wrong: isWrong(quiz)}'>
@@ -58,7 +58,7 @@
 
   <script src="vendor/angular/1.2.13/angular.min.js"></script>
   <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
   mixpanel.init("65ed08aae082d2b6b0a0f7f5efc7c6e7");</script>
   <script src="src/quizApp.js"></script>
 </body>
