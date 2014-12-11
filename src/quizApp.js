@@ -98,6 +98,102 @@ quizApp.factory('Quizzes', function() {
       image: '5400673/113bcbd8-812a-11e4-891a-046aae98723f.jpg',
       right: '5400675/115d9448-812a-11e4-92a5-778f7871d33e.jpg',
     },
+    {
+      name: 'Eddie Park',
+      wrong: '5400677/1161ba00-812a-11e4-8dd5-3db052d246c4.jpg',
+      image: '5400676/1161cf18-812a-11e4-81ab-23cda59cac75.jpg',
+      right: '5400674/115cb7bc-812a-11e4-9874-fc45086f6a78.jpg',
+    },
+    {
+      name: 'Dion Ho',
+      wrong: '5402007/8c86049c-8135-11e4-977b-8a0435d2a901.jpg',
+      image: '5402004/8c657628-8135-11e4-8d6e-343f103e428f.jpg',
+      right: '5402010/8c8c9596-8135-11e4-8a52-6c27d5403e5c.jpg',
+    },
+    {
+      name: 'Cyrus Behzadi',
+      wrong: '5402008/8c8937a2-8135-11e4-8da6-1bdee751ed01.jpg',
+      image: '5402009/8c8b5744-8135-11e4-9737-fb76b9c1ff8b.jpg',
+      right: '5402006/8c84db80-8135-11e4-8ef1-c228075f933a.jpg',
+    },
+    {
+      name: 'Chris Blackwell',
+      wrong: '5402005/8c7c8f66-8135-11e4-80ea-e147dec27a9b.jpg',
+      image: '5402011/8c9521f2-8135-11e4-8e3b-fd29e29f72d7.jpg',
+      right: '5402012/8c9da05c-8135-11e4-845d-5d939fe9b5ad.jpg',
+    },
+    {
+      name: 'Bianca Verdi',
+      wrong: '5402014/8ca42526-8135-11e4-871a-c0171dded162.jpg',
+      image: '5402013/8ca287ca-8135-11e4-8da4-80e434f66c4b.jpg',
+      right: '5402015/8ca45b5e-8135-11e4-8621-21c3cd8decfd.jpg',
+    },
+    {
+      name: 'Jon Wise',
+      wrong: '5402017/8cacf26e-8135-11e4-8cf8-b6d2bc2473af.jpg',
+      image: '5402018/8cb5b2be-8135-11e4-9b6f-90beb559c46a.jpg',
+      right: '5402016/8ca4aec4-8135-11e4-82b8-78a01bb08bd5.jpg',
+    },
+    {
+      name: 'Jon Shen',
+      wrong: '5402019/8cbc070e-8135-11e4-9d3e-867305531a19.jpg',
+      image: '5402020/8cbd5118-8135-11e4-913f-2d67ea2fae70.jpg',
+      right: '5402021/8cbdbc52-8135-11e4-9c06-27f94eeb35e7.jpg',
+    },
+    {
+      name: 'Joey De La Rosa',
+      wrong: '5402023/8cc41b10-8135-11e4-99f8-10397076b8bb.jpg',
+      image: '5402022/8cc0688a-8135-11e4-8b91-276531e5c488.jpg',
+      right: '5402024/8ccbecc8-8135-11e4-8f2c-28169c92de71.jpg',
+    },
+    {
+      name: 'Jessica Yuhara',
+      wrong: '5402025/8cd508f8-8135-11e4-92d0-56ce084de193.jpg',
+      image: '5402027/8cd5bd20-8135-11e4-85b5-f160cb4a7380.jpg',
+      right: '5402026/8cd5abbe-8135-11e4-8974-701d7d72e284.jpg',
+    },
+    {
+      name: 'Jason May',
+      wrong: '5402028/8cd7ff36-8135-11e4-84d0-2baedc9cdec2.jpg',
+      image: '5402029/8cdb899e-8135-11e4-97db-83fb1f01a164.jpg',
+      right: '5402030/8ce5b6d0-8135-11e4-98b1-083e379ae63b.jpg',
+    },
+    {
+      name: 'Jason Kwong',
+      wrong: '5402033/8cf814ce-8135-11e4-82a7-7bf828e96246.jpg',
+      image: '5402032/8cf6030a-8135-11e4-9148-d51e3483303d.jpg',
+      right: '5402031/8cf5d8ee-8135-11e4-8f93-0a90e035133a.jpg',
+    },
+    {
+      name: 'Will Gurman',
+      wrong: '5402034/8cf8face-8135-11e4-97b1-6f1505b245fb.jpg',
+      image: '5402035/8cff217e-8135-11e4-89d2-e2b53efd05c4.jpg',
+      right: '5402036/8d070d8a-8135-11e4-8d35-9fd44dd2f80e.jpg',
+    },
+    {
+      name: 'Victoria Wilburn',
+      wrong: '5402039/8d0eef28-8135-11e4-9971-c2cce8f444f6.jpg',
+      image: '5402041/8d0fb08e-8135-11e4-87c9-f6d057034861.jpg',
+      right: '5402040/8d0f68c2-8135-11e4-8953-53cc6411e05e.jpg',
+    },
+    {
+      name: 'Sheauen Park',
+      wrong: '5402042/8d11a11e-8135-11e4-84d8-bed74b32d957.jpg',
+      image: '5402043/8d15b506-8135-11e4-8adc-c0fcc63c0723.jpg',
+      right: '5402044/8d326e76-8135-11e4-8660-b1c740c079e0.jpg',
+    },
+    {
+      name: 'Ross Colette',
+      wrong: '5402046/8d3c9aae-8135-11e4-85de-a93d4d75163e.jpg',
+      image: '5402048/8d3f2bf2-8135-11e4-9c5a-3d5f263b79a2.jpg',
+      right: '5402049/8d3fe420-8135-11e4-92c7-e704cdc19032.jpg',
+    },
+    {
+      name: 'Nate Holbrook',
+      wrong: '5402047/8d3d4968-8135-11e4-826c-b32676b5caf2.jpg',
+      image: '5402050/8d5f076a-8135-11e4-8564-a86eec5bbbd4.jpg',
+      right: '5402045/8d3becbc-8135-11e4-8350-95a8ed590ed7.jpg',
+    },
     // {
     //   name: '',
     //   wrong: '',
@@ -105,14 +201,12 @@ quizApp.factory('Quizzes', function() {
     //   right: '',
     // },
     {
-      name: 'Eddie Park',
-      wrong: '5400677/1161ba00-812a-11e4-8dd5-3db052d246c4.jpg',
-      image: '5400676/1161cf18-812a-11e4-81ab-23cda59cac75.jpg',
-      right: '5400674/115cb7bc-812a-11e4-9874-fc45086f6a78.jpg',
+      name: 'Natalie Black',
+      wrong: '5402052/8d63aaae-8135-11e4-8ef6-6c2ccf5a7b7f.jpg',
+      image: '5402053/8d677bca-8135-11e4-95df-91799240b608.jpg',
+      right: '5402051/8d61976e-8135-11e4-80ce-c04b10b46c4d.jpg',
     }
   ];
-
-
 });
 
 quizApp.directive('kycFocus', [function () {
