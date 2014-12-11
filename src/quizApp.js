@@ -3,64 +3,22 @@ var quizApp = angular.module('quizApp', []);
 quizApp.factory('Quizzes', function() {
   return [
     {
-        name: 'Aaron Harpole',
-        path: '2014-10-20/2840638594_192.jpg'
+        name: 'Ashley Downs',
+        image: '5399050/8d6e4f0e-811c-11e4-8c8b-554c784a34c5.jpg',
+        wrong: '5399052/8d70bb7c-811c-11e4-884e-ad383b8121d1.jpg',
+        right: '5399048/8d4d0a74-811c-11e4-8664-d45acd1b2e1d.jpg'
     },
     {
-        name: 'Adam Feuerberg',
-        path: '2014-11-05/2945165349_c82f9e5ae36deac761cc_192.jpg'
+        name: 'Doris Willette',
+        image: '5399053/8d74561a-811c-11e4-8441-49ddcb4d2008.jpg',
+        wrong: '5399054/8d77511c-811c-11e4-9916-cf5945c70c20.jpg',
+        right: '5399051/8d707e78-811c-11e4-9fd2-0eae252bbe40.jpg'
     },
     {
-        name: 'Adam Perly',
-        path: '2014-10-14/2806496756_192.jpg'
-    },
-    {
-        name: 'Alex Geller',
-        path: '2014-09-25/2715180973_72.jpg'
-    },
-    {
-        name: 'Alex Vodovoz',
-        path: '2014-05-19/2346253520_192.jpg'
-    },
-    {
-        name: 'Alice Lee',
-        path: '2014-11-06/2955162058_daaa5e8e902bbe540f44_192.jpg'
-    },
-    {
-        name: 'Alyssa Manning',
-        path: '2014-11-05/2948442100_d9a37c65e2e56dd94f0e_192.jpg'
-    },
-    {
-        name: 'Ashtanti Ishakarah',
-        path: '2014-11-05/2946775790_2fc077a0b50d1d677432_72.jpg'
-    },
-    {
-        name: 'Barbara Evett',
-        path: '2014-10-07/2768169639_192.jpg'
-    },
-    {
-        name: 'Ben Stein',
-        path: '2014-10-02/2750066699_192.jpg'
-    },
-    {
-        name: 'Ben Singer',
-        path: '2014-11-05/2947871814_1a4267e52ae5f2e7bd9d_192.jpg'
-    },
-    {
-        name: 'Brando Madden',
-        path: '2014-07-08/2445753934_192.jpg'
-    },
-    {
-        name: 'Borislav Ivanov',
-        path: '2014-10-08/2773916977_192.jpg'
-    },
-    {
-        name: 'Carter Brown',
-        path: '2014-10-03/2755876249_192.jpg'
-    },
-    {
-        name: 'Chas Lacaillade',
-        path: '2014-10-16/2820755934_192.jpg'
+        name: 'Mohamed Aziz',
+        image: '5399056/8d84a164-811c-11e4-830c-fc9b3e2f61d3.jpg',
+        wrong: '5399055/8d7b5fb4-811c-11e4-8c54-61189eeca96b.jpg',
+        right: '5399049/8d62aa64-811c-11e4-9d11-d07382b4b12a.jpg'
     }
   ];
 });
@@ -85,7 +43,7 @@ function QuizCtrl($scope, $interval, Quizzes) {
     return array;
   };
 
-  $scope.quizzes = shuffle(Quizzes);
+  $scope.quizzes = shuffle(Quizzes).slice(0, 10);
   var quizIndex = 0;
   var tickCount = $scope.quizzes.length;
   var timer = $interval();
@@ -103,6 +61,10 @@ function QuizCtrl($scope, $interval, Quizzes) {
   function setOutcome() {
     $interval.cancel(timer);
     $scope.quiz.outcome = ($scope.guess == $scope.quiz.answer);
+    if($scope.quiz.outcome)
+      $scope.quiz.hint = baseUrl() + $scope.quiz.right;
+    else
+      $scope.quiz.hint = baseUrl() + $scope.quiz.wrong;
     mixpanel.track("Guess", {
       "guess": $scope.guess,
       "answer": $scope.quiz.answer,
@@ -112,7 +74,7 @@ function QuizCtrl($scope, $interval, Quizzes) {
   };
 
   function baseUrl() {
-    return 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/';
+    return 'https://cloud.githubusercontent.com/assets/7408595/';
   };
 
   $scope.isGuessed = function(quiz) {
@@ -133,7 +95,9 @@ function QuizCtrl($scope, $interval, Quizzes) {
 
   $scope.quizzes.next = function() {
     $scope.quiz = $scope.quizzes[quizIndex++];
-    $scope.quiz.hint = baseUrl() + $scope.quiz.path;
+    $scope.quiz.hint = baseUrl() + $scope.quiz.image;
+    $scope.quiz.hint_right = baseUrl() + $scope.quiz.right;
+    $scope.quiz.hint_wrong = baseUrl() + $scope.quiz.wrong;
     $scope.quiz.answer = $scope.quiz.name.substr(0,3).toLowerCase();
     $scope.guess = '';
 
