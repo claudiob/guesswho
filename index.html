@@ -45,7 +45,7 @@
 
   <form>
     <label>
-      <input onfocus='window.scrollTo(0,80); document.body.scrollTop = 80;' type="text" placeholder="What's my name?" autofocus="autofocus" autocorrect='off' autocapitalize='off' ng-model="guess" ng-cloak ng-hide="isGuessed(quiz)" data-kyc-focus="!isGuessed(quiz)" />
+      <input onfocus='window.scrollTo(0,80); document.body.scrollTop = 80;' ng-trim="false" type="text" placeholder="What's my name?" autofocus="autofocus" autocorrect='off' autocapitalize='off' ng-model="guess" ng-cloak ng-hide="isGuessed(quiz)" data-kyc-focus="!isGuessed(quiz)" />
     </label>
     <div class="outcome" ng-show="isGuessed(quiz)" ng-cloak ng-class='{right: isRight(quiz), wrong: isWrong(quiz)}'>
       <span ng-if='isRight(quiz)'>Right,</span>

@@ -2,3 +2,4 @@
 *.workflow
 curl.txt
 .gitignore~
+avatars/
