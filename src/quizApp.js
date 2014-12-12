@@ -814,6 +814,7 @@ function QuizCtrl($scope, $interval, Quizzes) {
     mixpanel.track("Guess", {
       "guess": $scope.guess,
       "answer": $scope.quiz.answer,
+      "name": $scope.quiz.name,
       "outcome": $scope.quiz.outcome,
       "index": quizIndex
     });
