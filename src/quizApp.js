@@ -701,7 +701,7 @@ quizApp.factory('Quizzes', function() {
     {
       name: 'Ashley Nichols',
       wrong: '5405407/5b9b7b36-8159-11e4-89d0-8ba534d3587a.jpg',
-      image: '5405406/5b99f040-8159-11e4-8658-7549a757b96d.jpg)',
+      image: '5405406/5b99f040-8159-11e4-8658-7549a757b96d.jpg',
       right: '5405409/5b9fd96a-8159-11e4-9604-b0f785899c68.jpg',
     },
     {
