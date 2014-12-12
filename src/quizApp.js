@@ -429,7 +429,7 @@ quizApp.factory('Quizzes', function() {
       right: '5404405/e21b179c-814b-11e4-856a-223bd8ac97fc.jpg',
     },
     {
-      name: 'Kabibi Dagogo-Jack',
+      name: 'Karibi Dagogo-Jack',
       wrong: '5404407/e21c4f18-814b-11e4-8867-907cd7d15c35.jpg',
       image: '5404406/e21b7264-814b-11e4-95b1-8d6e8202efeb.jpg',
       right: '5404409/e21e28ec-814b-11e4-86a1-489713d19cc8.jpg',
