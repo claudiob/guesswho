@@ -54,7 +54,7 @@
       it’s <strong>{{ quiz.name }}</strong>! <br />
     </div>
 
-    <input type="submit" ng-cloak ng-show="isGuessed(quiz) && !quizzes.over()" data-kyc-focus="isGuessed(quiz) && !quizzes.over()" ng-click='quizzes.next()' value="Try another" />
+    <input type="button" ng-cloak ng-show="isGuessed(quiz) && !quizzes.over()" data-kyc-focus="isGuessed(quiz) && !quizzes.over()" ng-click='quizzes.next()' value="Try another" />
     <div ng-cloak ng-show="isGuessed(quiz) && quizzes.over()">GAME OVER! :)</div>
   </form>
 
