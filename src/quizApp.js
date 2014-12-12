@@ -806,7 +806,7 @@ function QuizCtrl($scope, $interval, Quizzes) {
 
   function setOutcome() {
     $interval.cancel(timer);
-    $scope.quiz.outcome = ($scope.guess == $scope.quiz.answer);
+    $scope.quiz.outcome = ($scope.guess.toLowerCase() == $scope.quiz.answer.toLowerCase());
     if($scope.quiz.outcome)
       $scope.quiz.hint = baseUrl() + $scope.quiz.right;
     else
